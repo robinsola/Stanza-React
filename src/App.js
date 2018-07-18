@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Splash from './components/Splash';
 import SearchForm from './components/SearchForm';
 import { Link, Route, Switch } from 'react-router-dom';
+import PoemList from './components/PoemList';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <h1 className="App-title">Poetry App</h1>
           <Navbar />
         </header>
+        <PoemList />
         <Switch>
           <Route exact path = '/' component={Splash} />
           <Route path = '/searchform' component={SearchForm} />
