@@ -5,19 +5,23 @@ import Navbar from './components/Navbar';
 import Splash from './components/Splash';
 import SearchForm from './components/SearchForm';
 import { Link, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Poetry App</h1>
-        </header>
-        <Switch>
-          <Route exact path = '/' component={Splash} />
-          <Route path = '/searchform' component={SearchForm} />
-        </Switch>
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <header className="App-header">
+            <h1 className="App-title">Poetry App</h1>
+          </header>
+          <Switch>
+            <Route exact path = '/' component={Splash} />
+            <Route path = '/searchform' component={SearchForm} />
+          </Switch>
+        </div>
+      </Provider>
     );
   }
 }
