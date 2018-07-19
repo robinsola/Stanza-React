@@ -11,7 +11,7 @@ class PoemList extends React.Component {
 
   componentDidMount() {
     console.log('test');
-    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;death')
+    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/dickinson;death')
     .then(response => {
       if (!response.ok) {
         throw Error('Sorry, request has failed')
