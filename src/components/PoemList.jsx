@@ -15,7 +15,7 @@ class PoemList extends React.Component {
       <div key={poem.id}>
         <h2>{poem.title}</h2>
         <h4>{poem.author}</h4>
-        <p>{poem.lines}</p>
+        <pre>{poem.lines.join('\n')}</pre>
       </div>
     ));
     return (
