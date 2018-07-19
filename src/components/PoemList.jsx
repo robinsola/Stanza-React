@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PoemList extends Component {
+class PoemList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +11,7 @@ class PoemList extends Component {
 
   componentWillMount() {
     console.log('test');
-    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/shakespeare;love')
+    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;love')
     .then(response => {
       if (!response.ok) {
         throw Error('Sorry, request has failed')
