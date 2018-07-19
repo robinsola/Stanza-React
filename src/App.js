@@ -12,7 +12,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Poetry App</h1>
-          <Navbar />
         </header>
         <Switch>
           <Route exact path = '/' component={Splash} />

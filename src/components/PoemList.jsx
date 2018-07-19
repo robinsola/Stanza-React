@@ -9,9 +9,9 @@ class PoemList extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     console.log('test');
-    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;love')
+    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;death')
     .then(response => {
       if (!response.ok) {
         throw Error('Sorry, request has failed')
