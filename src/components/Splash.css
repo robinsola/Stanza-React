@@ -24,18 +24,27 @@
   position: absolute;
   top: -540px;
   transform: rotate(-95deg);
-  animation: featherDrop infinite 5s ease-in-out 0s;
+  animation: featherDrop infinite 10s ease-in-out 0s;
 }
 
 @keyframes featherDrop {
   0% {}
     10% {transform: translate(250px, 50px) rotate(-120deg);}
-    30% {transform: translate(-310px, 110px) rotate(-70deg);}
+    25% {transform: translate(-310px, 110px) rotate(-70deg);}
     40% {transform: translate(210px, 200px) rotate(-115deg);}
-    50% {transform: translate(-220px, 250px) rotate(-90deg);}
-    70% {transform: translate(180px, 300px) rotate(-110deg);}
-    80% {transform: translate(-250px, 340px) rotate(-70deg);}
-    90% {transform: translate(-120px, 370px)rotate(-60deg);}
-    100% {transform: translate(-110px, 380px) rotate(-20deg);}
-    /*100% {transform: translate(50px, 495px);}*/
+    55% {transform: translate(-220px, 250px) rotate(-80deg);}
+    70% {transform: translate(180px, 320px) rotate(-110deg);}
+    80% {transform: translate(-260px, 340px) rotate(-60deg);}
+    85% {transform: translate(-130px, 370px)rotate(-60deg);}
+    90% {transform: translate(-55px, 330px);}
+    95% {transform: translate(-5px, 340px) rotate(15deg);}
+    100% {transform: translate(-60px, 350px);}
 }
+
+    /*90% {transform: translate(55px, 495px)}
+    95% {transform: translate(60px, 515px) rotate(10deg)}
+    100% {transform: translate(50px, 495px)}*/
+
+    /*90% {transform: translate(-55px, 330px) rotate(-5deg);}
+    95% {transform: translate(-5px, 340px) rotate(15deg);}
+    100% {transform: translate(-60px, 350px);}*/
