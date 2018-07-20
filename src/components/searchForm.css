@@ -3,6 +3,10 @@ form {
   text-align: left;
 }
 
+input {
+  margin-bottom: 20px;
+}
+
 .formStyles {
   display: flex;
   flex-direction: column;
