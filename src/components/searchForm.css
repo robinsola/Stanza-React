@@ -1,10 +1,11 @@
 form {
   align-self: center;
-  text-align: left;
 }
 
-input {
-  margin-bottom: 20px;
+span {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
 }
 
 input[type='radio'] {
@@ -12,8 +13,15 @@ input[type='radio'] {
 }
 
 input[type="radio"]:checked + span {
-      background-color: blue;
-      color: gray;
+      background-color: #50E3C2;
+      color: #4C4C4C;
+}
+
+.radioGroup {
+  border: 2px solid  #50E3C2;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
 }
 
 .formStyles {
