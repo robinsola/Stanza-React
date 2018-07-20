@@ -4,6 +4,10 @@ import './Splash.css';
 import feather from '../assets/feather.png';
 import inkWell from '../assets/logo2.png';
 function Splash() {
+  const linkStyles = {
+    textDecoration: 'none',
+    color: 'white'
+  };
   return (
     <div className='splashContainer'>
       <div className='logoStyles'>
@@ -13,7 +17,7 @@ function Splash() {
         <div className='inkWell'>
           <img src={inkWell}/>
         </div>
-        <Link className='enterBtn' to="/searchform">find poems</Link>
+        <Link className='enterBtn' style={linkStyles} to="/searchform">find poems</Link>
       </div>
     </div>
   );
