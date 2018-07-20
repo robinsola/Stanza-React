@@ -5,3 +5,12 @@ html {
 .App {
   text-align: center;
 }
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+    font-size: 1em;
+    color: gray;
+}
