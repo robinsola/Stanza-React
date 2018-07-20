@@ -7,6 +7,15 @@ input {
   margin-bottom: 20px;
 }
 
+input[type='radio'] {
+  display: none;
+}
+
+input[type="radio"]:checked + span {
+      background-color: blue;
+      color: gray;
+}
+
 .formStyles {
   display: flex;
   flex-direction: column;

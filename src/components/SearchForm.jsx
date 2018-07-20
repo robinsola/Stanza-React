@@ -18,31 +18,31 @@ function SearchForm() {
         <h3>What's the Occasion?</h3>
         <form onSubmit={handleSearch}>
           <div className='radioGroup'>
-            <label><input type='radio' name='radioInput' value='anniversary'/>Anniversary</label>
+            <label><input type='radio' name='radioInput' value='anniversary'/><span>Anniversary</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='birthday'/>Birthday</label>
+            <label><input type='radio' name='radioInput' value='birthday'/><span>Birthday</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='farewell'/>Breakup</label>
+            <label><input type='radio' name='radioInput' value='farewell'/><span>Breakup</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='romance'/>Casual Hookup</label>
+            <label><input type='radio' name='radioInput' value='romance'/><span>Casual Hookup</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='celebrate'/>Congratulations</label>
+            <label><input type='radio' name='radioInput' value='celebrate'/><span>Congratulations</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='father'/>Father's Day</label>
+            <label><input type='radio' name='radioInput' value='father'/><span>Father's Day</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='death'/>Funeral</label>
+            <label><input type='radio' name='radioInput' value='death'/><span>Funeral</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='fear'/>Halloween</label>
+            <label><input type='radio' name='radioInput' value='fear'/><span>Halloween</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='mother'/>Mother's Day</label>
+            <label><input type='radio' name='radioInput' value='mother'/><span>Mother's Day</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='spring'/>Spring</label>
+            <label><input type='radio' name='radioInput' value='spring'/><span>Spring</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='thank'/>Thank You</label>
+            <label><input type='radio' name='radioInput' value='thank'/><span>Thank You</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='love'/>Wedding</label>
+            <label><input type='radio' name='radioInput' value='love'/><span>Wedding</span></label>
             <br />
-            <label><input type='radio' name='radioInput' value='winter'/>Winter</label>
+            <label><input type='radio' name='radioInput' value='winter'/><span>Winter</span></label>
             <br />
           </div>
           <input type='text' id='author' placeholder='search by author' ref={(input)=>{_author = input;}}/><br />
