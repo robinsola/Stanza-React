@@ -1,5 +1,17 @@
-html {
+.splashContainer {
+  min-height: 900px;
   background: linear-gradient(#F6FA61, #F76B1C);
-  min-height: 100%;
+}
 
+.feather img {
+  width: 70px;
+}
+
+.inkWell img {
+  width: 200px;
+}
+
+.logoStyles {
+  position: relative;
+  transform: translateY(180px);
 }

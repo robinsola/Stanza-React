@@ -5,12 +5,16 @@ import feather from '../assets/feather.png';
 import inkWell from '../assets/logo2.png';
 function Splash() {
   return (
-    <div>
-      <div>
-        <img src={feather}/>
-        <img src={inkWell}/>
+    <div className='splashContainer'>
+      <div className='logoStyles'>
+        <div className='feather'>
+          <img src={feather}/>
+        </div>
+        <div className='inkWell'>
+          <img src={inkWell}/>
+        </div>
+        <Link to="/searchform">find poems</Link>
       </div>
-      <Link to="/searchform">find poems</Link>
     </div>
   );
 }
