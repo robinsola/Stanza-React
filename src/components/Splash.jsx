@@ -13,7 +13,7 @@ function Splash() {
         <div className='inkWell'>
           <img src={inkWell}/>
         </div>
-        <Link to="/searchform">find poems</Link>
+        <Link className='enterBtn' to="/searchform">find poems</Link>
       </div>
     </div>
   );
