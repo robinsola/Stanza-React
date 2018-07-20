@@ -22,21 +22,25 @@ function SearchForm() {
             <br />
             <label><input type='radio' name='radioInput' value='birthday'/>Birthday</label>
             <br />
-            <label><input type='radio' name='radioInput' value='breakup'/>Breakup</label>
+            <label><input type='radio' name='radioInput' value='farewell'/>Breakup</label>
             <br />
             <label><input type='radio' name='radioInput' value='romance'/>Casual Hookup</label>
             <br />
-            <label><input type='radio' name='radioInput' value='congratulations'/>Congratulations</label>
-            <br />
-            <label><input type='radio' name='radioInput' value='farewell'/>Farewell</label>
+            <label><input type='radio' name='radioInput' value='celebrate'/>Congratulations</label>
             <br />
             <label><input type='radio' name='radioInput' value='father'/>Father's Day</label>
             <br />
-            <label><input type='radio' name='radioInput' value='halloween'/>Halloween</label>
+            <label><input type='radio' name='radioInput' value='death'/>Funeral</label>
+            <br />
+            <label><input type='radio' name='radioInput' value='fear'/>Halloween</label>
             <br />
             <label><input type='radio' name='radioInput' value='mother'/>Mother's Day</label>
             <br />
             <label><input type='radio' name='radioInput' value='spring'/>Spring</label>
+            <br />
+            <label><input type='radio' name='radioInput' value='thank'/>Thank You</label>
+            <br />
+            <label><input type='radio' name='radioInput' value='love'/>Wedding</label>
             <br />
             <label><input type='radio' name='radioInput' value='winter'/>Winter</label>
             <br />
