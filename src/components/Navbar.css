@@ -1,0 +1,15 @@
+img {
+  padding: 0 50px;
+}
+
+.navDividers {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.navStyles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
