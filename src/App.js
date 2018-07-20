@@ -13,9 +13,6 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Poetry App</h1>
-          </header>
           <Switch>
             <Route exact path = '/' component={Splash} />
             <Route path = '/searchform' component={SearchForm} />
