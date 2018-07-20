@@ -28,7 +28,6 @@ function SearchForm() {
         <input type='text' id='theme' placeholder='search by theme' ref={(input)=>{_theme = input;}}/><br />
         <button type='submit'>find poems</button>
       </form>
-      <p>Poem List:</p>
       <PoemList />
     </div>
   );
