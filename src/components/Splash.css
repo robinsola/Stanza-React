@@ -29,12 +29,12 @@
 
 @keyframes featherDrop {
   0% {}
-    10% {transform: translate(250px, 50px) rotate(-120deg);}
-    25% {transform: translate(-310px, 110px) rotate(-70deg);}
-    40% {transform: translate(210px, 200px) rotate(-115deg);}
-    55% {transform: translate(-220px, 250px) rotate(-80deg);}
-    70% {transform: translate(180px, 320px) rotate(-110deg);}
-    80% {transform: translate(-260px, 330px) rotate(-60deg);}
+    5% {transform: translate(220px, 50px) rotate(-120deg);}
+    20% {transform: translate(-320px, 110px) rotate(-70deg);}
+    35% {transform: translate(220px, 200px) rotate(-115deg);}
+    50% {transform: translate(-220px, 250px) rotate(-80deg);}
+    65% {transform: translate(190px, 320px) rotate(-110deg);}
+    80% {transform: translate(-280px, 320px) rotate(-60deg);}
     90% {transform: translate(-40px, 340px);}
     95% {transform: translate(-40px, 350px) rotate(10deg);}
     100% {transform: translate(-50px, 340px);}
