@@ -2,6 +2,11 @@ html {
   min-height: 100%;
 }
 
+body {
+  background-color: #4C4C4C;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -12,5 +17,4 @@ pre {
     white-space: pre;
     margin: 1em 0;
     font-size: 1em;
-    color: gray;
 }
