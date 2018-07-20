@@ -1,13 +1,13 @@
-img {
+.navStyles img {
   padding: 0 40px;
   filter: grayscale(100%) brightness(200%);
 }
 
-img:hover {
+.navStyles img:hover {
   filter: none
 }
 
-img:active {
+.navStyles img:active {
   filter: none
 }
 

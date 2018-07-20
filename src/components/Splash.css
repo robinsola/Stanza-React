@@ -1,5 +1,5 @@
 .splashContainer {
-  min-height: 900px;
+  min-height: 1000px;
   background: linear-gradient(#F6FA61, #F76B1C);
 }
 
@@ -35,9 +35,9 @@
     50% {transform: translate(-220px, 250px) rotate(-80deg);}
     65% {transform: translate(190px, 320px) rotate(-110deg);}
     80% {transform: translate(-280px, 320px) rotate(-60deg);}
-    90% {transform: translate(-40px, 340px);}
-    95% {transform: translate(-40px, 350px) rotate(10deg);}
-    100% {transform: translate(-50px, 340px);}
+    90% {transform: translate(-10px, 340px);}
+    95% {transform: translate(10px, 350px) rotate(10deg);}
+    100% {transform: translate(-10px, 340px);}
 }
 
     /*90% {transform: translate(55px, 495px)}
