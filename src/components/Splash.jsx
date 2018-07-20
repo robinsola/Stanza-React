@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Splash.css';
 import feather from '../assets/feather.png';
 import inkWell from '../assets/logo2.png';
 function Splash() {
