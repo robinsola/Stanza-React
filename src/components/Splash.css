@@ -34,11 +34,10 @@
     40% {transform: translate(210px, 200px) rotate(-115deg);}
     55% {transform: translate(-220px, 250px) rotate(-80deg);}
     70% {transform: translate(180px, 320px) rotate(-110deg);}
-    80% {transform: translate(-260px, 340px) rotate(-60deg);}
-    85% {transform: translate(-130px, 370px)rotate(-60deg);}
-    90% {transform: translate(-55px, 330px);}
-    95% {transform: translate(-5px, 340px) rotate(15deg);}
-    100% {transform: translate(-60px, 350px);}
+    80% {transform: translate(-260px, 330px) rotate(-60deg);}
+    90% {transform: translate(-40px, 340px);}
+    95% {transform: translate(-40px, 350px) rotate(10deg);}
+    100% {transform: translate(-50px, 340px);}
 }
 
     /*90% {transform: translate(55px, 495px)}
