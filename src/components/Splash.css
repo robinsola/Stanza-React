@@ -3,8 +3,15 @@
   background: linear-gradient(#F6FA61, #F76B1C);
 }
 
-.feather img {
-  width: 70px;
+.logoStyles {
+  position: relative;
+  transform: translateY(400px);
+}
+
+.enterBtn {
+  border: 2px solid white;
+  padding: 15px 20px;
+  border-radius: 15px;
 }
 
 .inkWell img {
@@ -12,13 +19,23 @@
   margin-bottom: 30px;
 }
 
-.logoStyles {
-  position: relative;
-  transform: translateY(180px);
+.feather img {
+  width: 70px;
+  position: absolute;
+  top: -540px;
+  transform: rotate(-95deg);
+  animation: featherDrop infinite 5s ease-in-out 0s;
 }
 
-.enterBtn {
-  border: 2px solid white;
-  padding: 15px 20px;
-  border-radius: 15px;
+@keyframes featherDrop {
+  0% {}
+    10% {transform: translate(250px, 50px) rotate(-120deg);}
+    30% {transform: translate(-310px, 110px) rotate(-70deg);}
+    40% {transform: translate(210px, 200px) rotate(-115deg);}
+    50% {transform: translate(-220px, 250px) rotate(-90deg);}
+    70% {transform: translate(180px, 300px) rotate(-110deg);}
+    80% {transform: translate(-250px, 340px) rotate(-70deg);}
+    90% {transform: translate(-120px, 370px)rotate(-60deg);}
+    100% {transform: translate(-110px, 380px) rotate(-20deg);}
+    /*100% {transform: translate(50px, 495px);}*/
 }
