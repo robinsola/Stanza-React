@@ -1,5 +1,14 @@
 img {
   padding: 0 40px;
+  filter: grayscale(100%) brightness(200%);
+}
+
+img:hover {
+  filter: none
+}
+
+img:active {
+  filter: none
 }
 
 .navDividers {
