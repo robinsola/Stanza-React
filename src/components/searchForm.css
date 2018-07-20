@@ -2,9 +2,34 @@ form {
   align-self: center;
 }
 
+button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 1em;
+  padding: 15px 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #4C4C4C;
+}
+
+input[type="text"] {
+    width: 100%;
+    color: #4C4C4C;
+    font-size: 1em;
+    border: 2px solid #F5A623;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
 span {
   display: block;
-  padding: 5px 0;
+  padding: 10px 90px;
   cursor: pointer;
 }
 
@@ -13,15 +38,21 @@ input[type='radio'] {
 }
 
 input[type="radio"]:checked + span {
-      background-color: #50E3C2;
-      color: #4C4C4C;
+  background-color: #50E3C2;
+  color: #4C4C4C;
+}
+
+input[type="radio"]:hover + span {
+  background-color: #50E3C2;
+  color: #4C4C4C;
 }
 
 .radioGroup {
   border: 2px solid  #50E3C2;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
 .formStyles {
