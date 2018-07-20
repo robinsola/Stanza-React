@@ -4,7 +4,7 @@
 ![mobile user interface](./screen_shot.png)
 
 ### Description
-A mobile app to find poems, using [PoetryDB API](https://github.com/thundercomb/poetrydb). Choose from a list of topics by holiday, theme, occasion, or search by author. User may also choose to generate a random poem from the database. Save, store, collect your favorite poems and authors for easy access. The goal is for the user to be able to use this easy poetry finder as a quick reference for inspiration in a situation where they are put on the spot to express themselves or give a short speech.
+An application to find poems, using [PoetryDB API](https://github.com/thundercomb/poetrydb). Choose from a list of topics by holiday, theme, occasion, or search by author. User may also choose to generate a random poem from the database. Save, store, collect your favorite poems and authors for easy access. The goal is for the user to be able to use this easy poetry finder as a quick reference for inspiration in a situation where they are put on the spot to express themselves or give a short speech.
 
 ### MVP
 * App will collect user input - selection of Holiday or theme, or submit author or keyword search.
@@ -65,8 +65,8 @@ App, LogoSplash, NavBar, PoemSearch, PoemList, Poem, FavPoemList, FavePoem
 ![component tree with state](./component_tree.jpg)
 
 ### Installation
-* Clone project folder in terminal: `$ git clone` repository url
-* In terminal, run `$ cd Stanza` to get inside project directory
+* Clone project folder in terminal: `$ git clone` repository url (https://github.com/robinsola/Stanza-React)
+* In terminal, run `$ cd Stanza-React` to get inside project directory
 * In terminal, run `$ npm install` in project folder home directory
 * In terminal, run `$ npm start` in project folder home directory
 
