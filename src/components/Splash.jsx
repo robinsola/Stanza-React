@@ -17,6 +17,7 @@ function Splash() {
         <div className='inkWell'>
           <img src={inkWell}/>
         </div>
+        <p className='tagLine'>a poem for every occasion</p>
         <Link className='enterBtn' style={linkStyles} to="/searchform">find poems</Link>
       </div>
     </div>

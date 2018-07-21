@@ -3,7 +3,7 @@ import { FETCH_POEMS } from './types';
 export function fetchPoems() {
   return function(dispatch) {
     console.log('I am working!');
-    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;hope')
+    fetch('https://cors-anywhere.herokuapp.com/' + 'http://poetrydb.org/author,title/;celebrate')
     .then(response => response.json())
     .then(poemList => dispatch({
       type: FETCH_POEMS,
