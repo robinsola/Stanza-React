@@ -15,7 +15,7 @@ function SearchForm() {
     <div>
       <Navbar />
       <div className='formStyles'>
-        <h3>What's the Occasion?</h3>
+        <h3 className="title">pick a theme:</h3>
         <form onSubmit={handleSearch}>
           <div className='radioGroup'>
             <label><input type='radio' name='radioInput' value='anniversary'/><span>Anniversary</span></label>
@@ -45,6 +45,7 @@ function SearchForm() {
             <label><input type='radio' name='radioInput' value='winter'/><span>Winter</span></label>
             <br />
           </div>
+          <h3 className="title">or choose your own:</h3>
           <input type='text' id='author' placeholder='search by author' ref={(input)=>{_author = input;}}/><br />
           <input type='text' id='theme' placeholder='search by theme' ref={(input)=>{_theme = input;}}/><br />
           <button type='submit'>find poems</button>
