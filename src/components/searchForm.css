@@ -19,9 +19,10 @@ button:hover {
 
 input[type="text"] {
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
     color: #4C4C4C;
     font-size: 1em;
-    border: 2px solid #F5A623;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 20px;
@@ -39,18 +40,18 @@ input[type='radio'] {
 
 input[type="radio"]:checked + span {
   background-color: #50E3C2;
-  color: #4C4C4C;
+  color: white;
 }
 
 input[type="radio"]:hover + span {
   background-color: #50E3C2;
-  color: #4C4C4C;
+  color: white;
 }
 
 .radioGroup {
   border: 2px solid  #50E3C2;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255);
   margin-bottom: 20px;
   padding-top: 15px;
 }
