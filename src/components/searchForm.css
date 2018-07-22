@@ -30,7 +30,7 @@ input[type="text"] {
 
 span {
   display: block;
-  padding: 5px 90px;
+  padding: 15px 90px;
   cursor: pointer;
 }
 
@@ -49,11 +49,11 @@ input[type="radio"]:hover + span {
 }
 
 .radioGroup {
-  border: 2px solid  #4D7EA8;
+  line-height: 0.9px;
+  border: 3px solid  #4D7EA8;
   border-radius: 10px;
   background-color: rgba(255, 255, 255);
   margin-bottom: 20px;
-  padding-top: 15px;
 }
 
 .formStyles {
