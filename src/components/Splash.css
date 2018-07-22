@@ -28,19 +28,23 @@
   width: 70px;
   position: absolute;
   top: -380px;
-  left: -50px;
   transform: rotate(-95deg);
-  animation: featherDrop infinite 5s ease-in-out 0s;
+  animation: featherDrop 5s ease-in-out 0s 1 forwards;
 }
 
 @keyframes featherDrop {
   0% {}
-  30% {transform: translate(500px, 130px) rotate(-120deg);}
-  60% {transform: translate(40px, 155px) rotate(-70deg);}
+  30% {transform: translate(200px, 130px) rotate(-120deg);}
+  60% {transform: translate(-200px, 170px) rotate(-70deg);}
+  75% {transform: translate(-90px, 190px) rotate(-40deg);}
+  85% {transform: translate(-30px, 180px) rotate(-10deg);}
+  95% {transform: translate(-10px, 190px);}
+  100% {transform: translate(-10px, 180px);}
+  /* 60% {transform: translate(40px, 155px) rotate(-70deg);}
   80% {transform: translate(265px, 190px) rotate(-40deg);}
   90% {transform: translate(345px, 180px);}
   95% {transform: translate(340px, 185px);}
-  100% {transform: translate(340px, 180px);}
+  100% {transform: translate(340px, 180px);} */
 }
 
 /* 5% {transform: translate(220px, 50px) rotate(-120deg);}
