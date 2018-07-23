@@ -1,17 +1,25 @@
-import { FETCH_POEMS } from '../actions/types';
-
-const initialState = {
+let initialState = {
+  inputAuthor: '',
+  inputKeyword: '',
   results: [],
 };
 
-export default function(state = initialState, action) {
+const searchReducer = (state = initialState, action) => {
   switch(action.type) {
-    case FETCH_POEMS:
+    case 'SEARCH_KEYWORD':
       return {
         ...state,
-        results: action.payload
+        inputKeyword: action.inputKeyword
+      }
+    break;
+    case 'FETCH_POEMS':
+      return {
+        ...state,
+        results: action.results
       }
     default:
       return state;
   }
 }
+
+export default searchReducer;
