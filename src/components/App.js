@@ -25,7 +25,7 @@ const mapStateToProps = initialState => {
   return {
     inputAuthor: initialState.inputAuthor,
     inputKeyword: initialState.inputKeyword,
-    poems: initialState.searchResults
+    poems: initialState.poems
   }
 }
 

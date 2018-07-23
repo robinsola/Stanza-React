@@ -1,13 +1,17 @@
-import Redux from 'redux';
-
 let initialState = {
   inputAuthor: '',
   inputKeyword: '',
-  results: [],
+  poems: [],
 };
 
 const searchReducer = (state = initialState, action) => {
   switch(action.type) {
+    case 'SEARCH_AUTHOR':
+      return {
+        ...state,
+        inputAuthor: action.inputAuthor
+      }
+    break;
     case 'SEARCH_KEYWORD':
       return {
         ...state,
@@ -17,7 +21,7 @@ const searchReducer = (state = initialState, action) => {
     case 'FETCH_POEMS':
       return {
         ...state,
-        results: action.results
+        poems: action.poems
       }
     default:
       return state;
