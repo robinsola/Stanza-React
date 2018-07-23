@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(#F6FA61, #F76B1C);
+  background: linear-gradient(#F6FA61, #F76B1C, blue);
   /* background-color: #4C4C4C; */
   /* color: white; */
   font-family: 'Lato', sans-serif;
