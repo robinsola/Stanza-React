@@ -1,3 +1,5 @@
+import Redux from 'redux';
+
 let initialState = {
   inputAuthor: '',
   inputKeyword: '',

@@ -2,9 +2,36 @@ import React from 'react';
 import PoemList from './PoemList';
 import Navbar from './Navbar';
 import './searchForm.css';
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 class SearchForm extends React.Component {
+
+  onKeywordChange = (e) => {
+    let {dispatch} = this.props;
+    dispatch({type: 'SEARCH_KEYWORD', inputKeyword: e.target.value})
+  }
+
+  fetchPoems = () => {
+    let {dispatch} = this.props;
+    let {inputKeyword} = this.props;
+    fetch(`http://poetrydb.org/title/${inputKeyword}`)
+      .then(response => {
+        return response.json()
+      })
+      .then(response => {
+        dispatch({type: 'FETCH_POEMS', results: response})
+      })
+  }
+
   render () {
+    const poemList = this.props.poems.map(poem => (
+      <div key={poem.id}>
+        <h2>{poem.title}</h2>
+        <h4>{poem.author}</h4>
+        <pre>{poem.lines.join('\n')}</pre>
+      </div>
+    ));
     return (
       <div>
         <Navbar />
@@ -42,12 +69,17 @@ class SearchForm extends React.Component {
             <h3 className="title">or choose your own:</h3>
             <input type='text' id='author' placeholder='search by author'/><br />
             <input type='text' id='theme' placeholder='search by theme'/><br />
-            <button onClick={this.props.fetchPoems}>find poems</button>
+            <button onClick={this.fetchPoems}>find poems</button>
           </form>
+          <p>{poemList}</p>
         </div>
       </div>
     );
   }
 }
+
+SearchForm.propTypes = {
+  poems: PropTypes.object
+};
 
 export default SearchForm;
