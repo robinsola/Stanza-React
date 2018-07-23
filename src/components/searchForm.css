@@ -2,16 +2,17 @@ form {
   align-self: center;
 }
 
-button {
+.btn {
   background-color: transparent;
   color: white;
   border: 2px solid white;
   border-radius: 15px;
   font-size: 1em;
   padding: 15px 20px;
+  outline: none
 }
 
-button:hover {
+.btn:hover {
   cursor: pointer;
   background-color: white;
   color: #4C4C4C;

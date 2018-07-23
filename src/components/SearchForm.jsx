@@ -63,7 +63,7 @@ function SearchForm(props) {
           <h3 className="title">or choose your own:</h3>
           <input type='text' id='author' placeholder='search by author'onChange={onAuthorChange} value={props.inputAuthor} /><br />
           <input type='text' id='theme' placeholder='search by theme'/><br />
-          <Link to='/poemList'><button onClick={onSearch}>find poems</button></Link>
+          <Link to='/poemList'><button className='btn' onClick={onSearch}>find poems</button></Link>
         </form>
       </div>
     </div>
