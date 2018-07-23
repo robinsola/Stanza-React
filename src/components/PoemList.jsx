@@ -1,10 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Poem from './Poem'
+import Poem from './Poem';
+import {connect} from 'react-redux';
 
 function PoemList(props) {
-  return (
+  return(
     <div>
       {props.poems.map((poem, index) =>
       <Poem title={poem.title}
