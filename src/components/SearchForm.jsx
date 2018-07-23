@@ -60,9 +60,8 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='love' onChange={onKeywordChange} checked={props.inputKeyword === 'love'}/><span>Wedding</span></label>
           </div>
-          <h3 className="title">or choose your own:</h3>
-          <input type='text' id='author' placeholder='search by author'onChange={onAuthorChange} value={props.inputAuthor} /><br />
-          <input type='text' id='theme' placeholder='search by theme'/><br />
+          <h4 className="author">know of an author?</h4>
+          <input type='text' id='author' placeholder='|'onChange={onAuthorChange} value={props.inputAuthor} /><br />
           <Link to='/poemList'><button className='btn' onClick={onSearch}>find poems</button></Link>
         </form>
       </div>
