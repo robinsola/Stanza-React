@@ -7,6 +7,7 @@ import SearchForm from './SearchForm';
 import PoemList from './PoemList'
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
+import Error404 from './Error404';
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
             <Route exact path = '/' component={Splash} />
             <Route path = '/searchform' render={()=><SearchForm poems={this.props.poems} inputAuthor={this.props.inputAuthor} inputKeyword={this.props.inputKeyword}/>} />
             <Route path='/poemList' render={()=><PoemList poems={this.props.poems}/>} />
+            <Route component={Error404}/>
           </Switch>
         </div>
     );
