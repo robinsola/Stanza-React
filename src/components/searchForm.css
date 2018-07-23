@@ -9,6 +9,7 @@ form {
   border-radius: 15px;
   font-size: 1em;
   padding: 15px 20px;
+  margin-bottom: 30px;
   outline: none
 }
 
@@ -21,7 +22,7 @@ form {
 input[type="text"] {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
-    color: #4C4C4C;
+    color: white;
     font-size: 1em;
     border: 2px solid white;
     border-radius: 5px;
@@ -67,4 +68,8 @@ input[type="radio"]:hover + span {
   color: #4D7EA8;
   margin: 30px;
   font-size: 2em;
+}
+
+.author {
+  color: white;
 }

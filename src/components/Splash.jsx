@@ -6,7 +6,6 @@ import inkWell from '../assets/logo2.png';
 function Splash() {
   const linkStyles = {
     textDecoration: 'none',
-    color: 'white'
   };
   return (
     <div className='splashContainer'>

@@ -18,7 +18,13 @@
   border: 2px solid white;
   padding: 15px 20px;
   border-radius: 15px;
-  outline: none
+  outline: none;
+  color: white
+}
+
+.enterBtn:hover {
+  background-color: white;
+  color: #4C4C4C;
 }
 
 .inkWell img {
