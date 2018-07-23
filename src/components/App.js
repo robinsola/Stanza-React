@@ -6,6 +6,7 @@ import Splash from './Splash';
 import SearchForm from './SearchForm';
 import PoemList from './PoemList'
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path = '/' component={Splash} />
             <Route path = '/searchform' render={()=><SearchForm poems={this.props.poems} inputAuthor={this.props.inputAuthor} inputKeyword={this.props.inputKeyword}/>} />
-            <Route exact path='/poemList' render={()=><PoemList poems={this.props.poems}/>} />
+            <Route path='/poemList' render={()=><PoemList poems={this.props.poems}/>} />
           </Switch>
         </div>
     );
