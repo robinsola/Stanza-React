@@ -5,7 +5,11 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './store';
+import {createStore} from 'redux';
+import searchReducer from './reducers/searchReducer';
+// import store from './store';
+
+const store = createStore(searchReducer);
 
 ReactDOM.render(
   <HashRouter>
