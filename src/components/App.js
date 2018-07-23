@@ -1,35 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import { Link, Route, Switch, withRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Splash from './components/Splash';
-import SearchForm from './components/SearchForm';
+import Navbar from './Navbar';
+import Splash from './Splash';
+import SearchForm from './SearchForm';
+import PoemList from './PoemList'
 import {connect} from 'react-redux';
-import PropTypes from 'prop-types';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
         <div className="App">
           <Switch>
             <Route exact path = '/' component={Splash} />
-            <Route path = '/searchform' render={()=><SearchForm poems={this.props.results} />} />
+            <Route path = '/searchform' render={()=><SearchForm poems={this.props.poems} inputAuthor={this.props.inputAuthor} inputKeyword={this.props.inputKeyword}/>} />
+            <Route exact path='/poemList' render={()=><PoemList poems={this.props.poems}/>} />
           </Switch>
         </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = initialState => {
   return {
-    inputKeyword: state.inputKeyword,
-    results: state.results,
+    inputAuthor: initialState.inputAuthor,
+    inputKeyword: initialState.inputKeyword,
+    poems: initialState.searchResults
   }
 }
 
 App.propTypes = {
-  results: PropTypes.object
+  inputAuthor: PropTypes.string,
+  inputKeyword: PropTypes.string,
+  poems: PropTypes.array
 }
 
 export default withRouter(connect(mapStateToProps)(App));
