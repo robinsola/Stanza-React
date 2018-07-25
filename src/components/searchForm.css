@@ -10,7 +10,9 @@ form {
   font-size: 1em;
   padding: 15px 20px;
   margin-bottom: 30px;
-  outline: none
+  outline: none;
+  transition-property: color, background-color;
+  transition-duration: .3s;
 }
 
 .btn:hover {
