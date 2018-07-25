@@ -23,6 +23,12 @@ const searchReducer = (state = initialState, action) => {
         ...state,
         poems: action.poems
       }
+    break;
+    case 'FETCH_RANDOM':
+      return {
+        ...state,
+        poems: action.poems
+      }
     default:
       return state;
   }

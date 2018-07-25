@@ -20,7 +20,7 @@ function SearchForm(props) {
     let {dispatch} = props;
     let {inputAuthor} = props;
     let {inputKeyword} = props;
-    fetch(`http://poetrydb.org/author,title/${inputAuthor};${inputKeyword}`)
+    fetch('https://cors-anywhere.herokuapp.com/' + `http://poetrydb.org/author,title/${inputAuthor};${inputKeyword}`)
       .then(response => {
         return response.json()
       })
