@@ -14,12 +14,12 @@ function Navbar(props) {
 
   function onRandomSearch(e) {
     let {dispatch} = props;
-    fetch('https://cors-anywhere.herokuapp.com/' + `http://poetrydb.org/author,title/shakespeare;sonnet`)
+    fetch('https://cors-anywhere.herokuapp.com/' + 'https://www.poemist.com/api/v1/randompoems')
       .then(response => {
         return response.json()
       })
       .then(response => {
-        dispatch({type: 'FETCH_POEMS', poems: response})
+        dispatch({type: 'FETCH_RANDOM', poems: response})
       })
   }
 

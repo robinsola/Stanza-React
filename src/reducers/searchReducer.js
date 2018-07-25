@@ -2,8 +2,6 @@ let initialState = {
   inputAuthor: '',
   inputKeyword: '',
   poems: [],
-  selectedPoem: '',
-  favorites: [],
 };
 
 const searchReducer = (state = initialState, action) => {
@@ -26,16 +24,10 @@ const searchReducer = (state = initialState, action) => {
         poems: action.poems
       }
     break;
-    case 'SELECT_FAVORITE':
+    case 'FETCH_RANDOM':
       return {
         ...state,
-        selectedPoem: action.selectedPoem
-      }
-    break;
-    case 'ADD_FAVORITE':
-      return {
-        ...state,
-        favorites: state.favorites.concat(action.selectedPoem)
+        poems: action.poems
       }
     default:
       return state;
