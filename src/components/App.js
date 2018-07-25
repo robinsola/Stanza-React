@@ -18,7 +18,7 @@ class App extends React.Component {
             <Route exact path = '/' component={Splash} />
             <Route path = '/searchform' render={()=><SearchForm poems={this.props.poems} inputAuthor={this.props.inputAuthor} inputKeyword={this.props.inputKeyword}/>} />
             <Route path='/poemList' render={()=><PoemList poems={this.props.poems}/>} />
-            <Route path='/randomList' render={()=><RandomList poems={this.props.poems}/>}/>
+            <Route path='/randomList' render={()=><RandomList randoms={this.props.randoms}/>}/>
             <Route component={Error404}/>
           </Switch>
         </div>
@@ -30,14 +30,16 @@ const mapStateToProps = initialState => {
   return {
     inputAuthor: initialState.inputAuthor,
     inputKeyword: initialState.inputKeyword,
-    poems: initialState.poems
+    poems: initialState.poems,
+    randoms: initialState.randoms,
   }
 }
 
 App.propTypes = {
   inputAuthor: PropTypes.string,
   inputKeyword: PropTypes.string,
-  poems: PropTypes.array
+  poems: PropTypes.array,
+  randoms: PropTypes.array
 }
 
 export default withRouter(connect(mapStateToProps)(App));

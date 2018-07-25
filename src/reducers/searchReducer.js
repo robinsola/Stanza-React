@@ -2,6 +2,7 @@ let initialState = {
   inputAuthor: '',
   inputKeyword: '',
   poems: [],
+  randoms: [],
 };
 
 const searchReducer = (state = initialState, action) => {
@@ -27,7 +28,7 @@ const searchReducer = (state = initialState, action) => {
     case 'FETCH_RANDOM':
       return {
         ...state,
-        poems: action.poems
+        randoms: action.randoms
       }
     default:
       return state;

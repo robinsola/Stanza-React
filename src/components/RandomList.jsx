@@ -9,10 +9,10 @@ function RandomList(props) {
     <div>
       <Navbar />
       <div className='topPadding'>
-        {props.poems.map((poem, index) =>
-          <RandomPoem title={poem.title}
-            poet={poem.poet.name}
-            content={poem.content}
+        {props.randoms.map((random, index) =>
+          <RandomPoem title={random.title}
+            poet={random.poet.name}
+            content={random.content}
             key={index}/>
         )}
       </div>
@@ -21,7 +21,7 @@ function RandomList(props) {
 }
 
 RandomList.propTypes = {
-  poems: PropTypes.array
+  randoms: PropTypes.array
 };
 
 export default connect()(RandomList);

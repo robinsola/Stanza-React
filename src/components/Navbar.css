@@ -1,8 +1,6 @@
 .navStyles img {
   padding: 0 40px;
   filter: grayscale(100%) brightness(200%);
-  transition-property: filter;
-  transition-duration: .3s;
 }
 
 .navStyles img:hover {

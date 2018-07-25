@@ -19,7 +19,7 @@ function Navbar(props) {
         return response.json()
       })
       .then(response => {
-        dispatch({type: 'FETCH_RANDOM', poems: response})
+        dispatch({type: 'FETCH_RANDOM', randoms: response})
       })
   }
 
