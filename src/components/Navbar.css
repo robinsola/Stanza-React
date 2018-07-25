@@ -1,5 +1,5 @@
 .navStyles img {
-  width: 40px;
+  width: 35px;
   padding: 0 40px;
   filter: grayscale(100%) brightness(200%);
 }
@@ -29,4 +29,5 @@
   background-color: #4D7EA8;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid white;
 }
