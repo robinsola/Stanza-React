@@ -32,7 +32,7 @@ function SearchForm(props) {
   return (
     <div>
       <Navbar />
-      <div className='formStyles'>
+      <div className='formStyles topPadding'>
         <form>
           <h3 className="title">pick a theme:</h3>
           <div className='radioGroup'>
@@ -60,7 +60,7 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='love' onChange={onKeywordChange} checked={props.inputKeyword === 'love'}/><span>Wedding</span></label>
           </div>
-          <h4 className="author">know of an author?</h4>
+          <h4 className="author">looking for a specific author?</h4>
           <input type='text' id='author' placeholder='|'onChange={onAuthorChange} value={props.inputAuthor} /><br />
           <Link to='/poemList'><button className='btn' onClick={onSearch}>find poems</button></Link>
         </form>

@@ -8,12 +8,14 @@ function PoemList(props) {
   return(
     <div>
       <Navbar />
-      {props.poems.map((poem, index) =>
-      <Poem title={poem.title}
-      author={poem.author}
-      lines={poem.lines}
-      key={index}/>
-      )}
+      <div className='topPadding'>
+        {props.poems.map((poem, index) =>
+          <Poem title={poem.title}
+            author={poem.author}
+            lines={poem.lines}
+            key={index}/>
+        )}
+      </div>
     </div>
   );
 }
