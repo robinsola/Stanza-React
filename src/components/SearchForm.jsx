@@ -50,6 +50,8 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='death' onChange={onKeywordChange} checked={props.inputKeyword === 'death'}/><span>Funeral</span></label>
             <br />
+            <label><input type='radio' value='sleep' onChange={onKeywordChange} checked={props.inputKeyword === 'sleep'}/><span>Good Night</span></label>
+            <br />
             <label><input type='radio' value='fear' onChange={onKeywordChange} checked={props.inputKeyword === 'fear'}/><span>Halloween</span></label>
             <br />
             <label><input type='radio' value='mother' onChange={onKeywordChange} checked={props.inputKeyword === 'mother'}/><span>Mothers Day</span></label>
