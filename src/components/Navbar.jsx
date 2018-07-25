@@ -27,7 +27,7 @@ function Navbar(props) {
     <div>
       <div className='navStyles'>
         <Link to="/searchform"><img src={searchIcon}/></Link>
-        <Link to="/poemList"><img onClick={onRandomSearch} className='navDividers' src={shuffleIcon}/></Link>
+        <Link to="/randomList"><img onClick={onRandomSearch} className='navDividers' src={shuffleIcon}/></Link>
         <Link to="/"><img src={favsIcon}/></Link>
       </div>
     </div>
