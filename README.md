@@ -1,15 +1,14 @@
 # Stanza - Poetry Finder
 ##### Robin Sola // June 2018
 ---
-![mobile user interface](./screen_shot.png)
+![logo splash page](./splash_screen.png)
 
 ### Description
-An application to find poems, using [PoetryDB API](https://github.com/thundercomb/poetrydb). Choose from a list of topics by holiday, theme, occasion, or search by author. User may also choose to generate a random poem from the database. Save, store, collect your favorite poems and authors for easy access. The goal is for the user to be able to use this easy poetry finder as a quick reference for inspiration in a situation where they are put on the spot to express themselves or give a short speech.
+An application to find poems, using [PoetryDB API](https://github.com/thundercomb/poetrydb) and [POEMIST API](https://poemist.github.io/poemist-apidoc/). Choose from a list of topics by holiday, theme, occasion, and refine your search by adding an author. User may also choose to generate a random poem from the database. Save, store, collect your favorite poems for easy access. The goal is for the user to be able to use this easy poetry finder as a quick reference for inspiration in a situation where they are put on the spot to express themselves, give a short speech, or write a greeting in a card.
 
 ### MVP
 * App will collect user input - selection of Holiday or theme, or submit author or keyword search.
-* App will collect poems from the Poetry Database to display a list poems base on user search results - showing title, author, and first line of poem.
-* User will be able to click on single poems from the list to see full view of poem.
+* App will collect poems from the Poetry Database to display a list poems based on user search results - showing title, author, and poem content.
 
 ### Stretch Goals
 * User will be able to generate a random poem from the database.
