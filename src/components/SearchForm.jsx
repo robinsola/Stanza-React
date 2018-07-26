@@ -61,7 +61,7 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='birth' onChange={onKeywordChange} checked={props.inputKeyword === 'birth'}/><span>Happy Birthday</span></label>
             <br />
-            <label><input type='radio' value='life' onChange={onKeywordChange} checked={props.inputKeyword === 'life'}/><span>Livin</span></label>
+            <label><input type='radio' value='life' onChange={onKeywordChange} checked={props.inputKeyword === 'life'}/><span>Just Living Life</span></label>
             <br />
             <label><input type='radio' value='mother' onChange={onKeywordChange} checked={props.inputKeyword === 'mother'}/><span>Mothers Day</span></label>
             <br />
