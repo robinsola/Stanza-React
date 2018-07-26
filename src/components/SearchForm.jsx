@@ -21,9 +21,8 @@ function SearchForm(props) {
     let {inputAuthor} = props;
     let {inputKeyword} = props;
     fetch('https://cors-anywhere.herokuapp.com/' + `http://poetrydb.org/author,title/${inputAuthor};${inputKeyword}`)
-      .then(response => {
-        return response.json()
-      })
+      .then(response => response.json(),
+        error => console.log('An error occurred.', error))
       .then(response => {
         dispatch({type: 'FETCH_POEMS', poems: response})
       })
@@ -42,13 +41,11 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='bird' onChange={onKeywordChange} checked={props.inputKeyword === 'bird'}/><span>Bird Watching</span></label>
             <br />
-            <label><input type='radio' value='birth' onChange={onKeywordChange} checked={props.inputKeyword === 'birth'}/><span>Birthday</span></label>
-            <br />
             <label><input type='radio' value='farewell' onChange={onKeywordChange} checked={props.inputKeyword === 'farewell'}/><span>Breakup</span></label>
             <br />
             <label><input type='radio' value='romance' onChange={onKeywordChange} checked={props.inputKeyword === 'romance'}/><span>Casual Hookup</span></label>
             <br />
-            <label><input type='radio' value='celebrate' onChange={onKeywordChange} checked={props.inputKeyword === 'celebrate'}/><span>Congratulations</span></label>
+            <label><input type='radio' value='success' onChange={onKeywordChange} checked={props.inputKeyword === 'success'}/><span>Congratulations</span></label>
             <br />
             <label><input type='radio' value='father' onChange={onKeywordChange} checked={props.inputKeyword === 'father'}/><span>Fathers Day</span></label>
             <br />
@@ -61,6 +58,8 @@ function SearchForm(props) {
             <label><input type='radio' value='sleep' onChange={onKeywordChange} checked={props.inputKeyword === 'sleep'}/><span>Good Night</span></label>
             <br />
             <label><input type='radio' value='fear' onChange={onKeywordChange} checked={props.inputKeyword === 'fear'}/><span>Halloween</span></label>
+            <br />
+            <label><input type='radio' value='birth' onChange={onKeywordChange} checked={props.inputKeyword === 'birth'}/><span>Happy Birthday</span></label>
             <br />
             <label><input type='radio' value='life' onChange={onKeywordChange} checked={props.inputKeyword === 'life'}/><span>Livin</span></label>
             <br />

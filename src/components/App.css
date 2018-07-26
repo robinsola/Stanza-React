@@ -7,6 +7,11 @@
   margin: 0 50px;
 }
 
+/* .loader img {
+  width: 50px;
+  animation: Loader 1s ease-in-out 0s running;
+} */
+
 pre {
     display: block;
     font-family: monospace;
@@ -14,3 +19,16 @@ pre {
     margin: 1em 0;
     font-size: 1em;
 }
+
+/* @keyframes Loader {
+  0% {}
+  10% {transform: rotate(-10deg);}
+  25% {transform: rotate(5deg);}
+  30% {transform: rotate(-10deg);}
+  45% {transform: rotate(5deg);}
+  50% {transform: rotate(-10deg);}
+  65% {transform: rotate(5deg);}
+  70% {transform: rotate(-10deg);}
+  85% {transform: rotate(5deg);}
+  100% {}
+} */
