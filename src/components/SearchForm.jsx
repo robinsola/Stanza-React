@@ -38,7 +38,11 @@ function SearchForm(props) {
           <div className='radioGroup'>
             <label><input type='radio' value='anniversary' onChange={onKeywordChange} checked={props.inputKeyword === 'anniversary'}/><span>Anniversary</span></label>
             <br />
-            <label><input type='radio' value='birthday' onChange={onKeywordChange} checked={props.inputKeyword === 'birthday'}/><span>Birthday</span></label>
+            <label><input type='radio' value='friend' onChange={onKeywordChange} checked={props.inputKeyword === 'friend'}/><span>Best Buds</span></label>
+            <br />
+            <label><input type='radio' value='bird' onChange={onKeywordChange} checked={props.inputKeyword === 'bird'}/><span>Bird Watching</span></label>
+            <br />
+            <label><input type='radio' value='birth' onChange={onKeywordChange} checked={props.inputKeyword === 'birth'}/><span>Birthday</span></label>
             <br />
             <label><input type='radio' value='farewell' onChange={onKeywordChange} checked={props.inputKeyword === 'farewell'}/><span>Breakup</span></label>
             <br />
@@ -50,17 +54,28 @@ function SearchForm(props) {
             <br />
             <label><input type='radio' value='death' onChange={onKeywordChange} checked={props.inputKeyword === 'death'}/><span>Funeral</span></label>
             <br />
+            <label><input type='radio' value='nature' onChange={onKeywordChange} checked={props.inputKeyword === 'nature'}/><span>Get Outdoors</span></label>
+            <br />
+            <label><input type='radio' value='hope' onChange={onKeywordChange} checked={props.inputKeyword === 'hope'}/><span>Good Luck</span></label>
+            <br />
             <label><input type='radio' value='sleep' onChange={onKeywordChange} checked={props.inputKeyword === 'sleep'}/><span>Good Night</span></label>
             <br />
             <label><input type='radio' value='fear' onChange={onKeywordChange} checked={props.inputKeyword === 'fear'}/><span>Halloween</span></label>
             <br />
+            <label><input type='radio' value='life' onChange={onKeywordChange} checked={props.inputKeyword === 'life'}/><span>Livin</span></label>
+            <br />
             <label><input type='radio' value='mother' onChange={onKeywordChange} checked={props.inputKeyword === 'mother'}/><span>Mothers Day</span></label>
+            <br />
+            <label><input type='radio' value='venge' onChange={onKeywordChange} checked={props.inputKeyword === 'venge'}/><span>Sorry Not Sorry</span></label>
             <br />
             <label><input type='radio' value='spring' onChange={onKeywordChange} checked={props.inputKeyword === 'spring'}/><span>Spring</span></label>
             <br />
             <label><input type='radio' value='thank' onChange={onKeywordChange} checked={props.inputKeyword === 'thank'}/><span>Thank You</span></label>
             <br />
             <label><input type='radio' value='love' onChange={onKeywordChange} checked={props.inputKeyword === 'love'}/><span>Wedding</span></label>
+            <br />
+            <label><input type='radio' value='winter' onChange={onKeywordChange} checked={props.inputKeyword === 'winter'}/><span>Winter</span></label>
+            <br />
           </div>
           <h4 className="author">looking for a specific author?</h4>
           <input type='text' id='author' placeholder='|'onChange={onAuthorChange} value={props.inputAuthor} /><br />
